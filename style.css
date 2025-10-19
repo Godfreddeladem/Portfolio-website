@@ -1,0 +1,137 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: #333;
+    background-color: #f5f5f5;
+    line-height: 1.6;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    background: url('images/hero-bg.jpg') center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    text-align: center;
+    color: #fff;
+    padding: 2rem;
+}
+
+.profile-pic {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    margin-bottom: 1rem;
+}
+
+.accent {
+    color: #00bcd4;
+}
+
+.btn {
+    background: #00bcd4;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 25px;
+    display: inline-block;
+    margin-top: 1rem;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #0199a8;
+}
+
+/* Sections */
+.section {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.dark {
+    background: #001f3f;
+    color: #fff;
+}
+
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.project-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    overflow: hidden;
+    text-align: left;
+}
+
+.project-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+OBOBOBOBOBOBOBOBOBOB}
+OBOBOBOBOBOBOBOBOBOB
+.project-card h3 {
+    margin: 1rem;
+}
+OBOBOBOBOBOBOBOBOBOB
+OBOBOBOBOBOBOBOBOBOB.project-card p {
+    margin: 0 1rem 1rem;
+    font-size: 0.95rem;
+}
+
+/* Contact Section */
+.social-links {
+    margin-top: 1rem;
+}
+
+.social-links a {
+    margin: 0 0.5rem;
+    text-decoration: none;
+    color: #00bcd4;
+    font-weight: bold;
+OBOBOBOBOBOBOBOBOBOB}
+OBOBOBOBOBOBOBOBOBOB
+.social-links a:hover {
+    text-decoration: underline;
+OBOBOBOBOBOBOBOBOBOB}
+OBOBOBOBOBOBOBOBOBOB
+/* Footer */
+OBOBOBOBOBOBOBOBOBOBOBOBOBOBOBOBOBOBOBOBfooter {
+    background: #111;
+OBOBOBOBOBOBOBOBOBOB    color: #aaa;
+OBOBOBOBOBOBOBOBOBOB    text-align: center;
+OBOBOBOBOBOBOBOBOBOB    padding: 1rem;
+OBOBOBOBOBOBOBOBOBOB    font-size: 0.9rem;
+OBOBOBOBOBOBOBOBOBOB}
+
