@@ -34,5 +34,14 @@ scrollBtn.addEventListener("click", () => {
 window.addEventListener("load", () => {
   document.getElementById("loader").style.display = "none";
 });
+// Simple fade-in animation
+document.addEventListener("DOMContentLoaded", () => {
+  const hero = document.querySelector(".hero-content");
+  hero.style.opacity = 0;
+  hero.style.transition = "opacity 2s";
+  setTimeout(() => {
+    hero.style.opacity = 1;
+  }, 500);
+});
 
 
