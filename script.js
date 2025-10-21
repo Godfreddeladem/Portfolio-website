@@ -64,3 +64,49 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+// ===== PROJECT MODAL FUNCTIONALITY =====
+document.addEventListener("DOMContentLoaded", () => {
+  const modal = document.getElementById("project-modal");
+  const modalImg = document.getElementById("modal-image");
+  const modalTitle = document.getElementById("modal-title");
+  const modalDesc = document.getElementById("modal-description");
+  const closeBtn = document.querySelector(".close-btn");
+
+  const projects = {
+    1: {
+      title: "Brand Poster Design",
+      desc: "This vibrant promotional poster was created for a new clothing line launch — highlighting brand identity and color balance.",
+      img: "Images/project1.jpg",
+    },
+    2: {
+      title: "Logo Design",
+      desc: "A minimalist luxury logo designed using geometric balance and strong typography to represent premium streetwear.",
+      img: "Images/project2.jpg",
+    },
+    3: {
+      title: "Product Mockup",
+      desc: "This AirPods mockup showcases Delboy’s Store products with a clean presentation and brand consistency.",
+      img: "Images/project3.jpg",
+    }
+  };
+
+  document.querySelectorAll(".project-card").forEach(card => {
+    card.addEventListener("click", () => {
+      const id = card.getAttribute("data-project");
+      modalImg.src = projects[id].img;
+      modalTitle.textContent = projects[id].title;
+      modalDesc.textContent = projects[id].desc;
+      modal.style.display = "flex";
+    });
+  });
+
+  closeBtn.addEventListener("click", () => {
+    modal.style.display = "none";
+  });
+
+  window.addEventListener("click", e => {
+    if (e.target === modal) {
+      modal.style.display = "none";
+    }
+  });
+});
