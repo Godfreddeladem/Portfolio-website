@@ -9,6 +9,16 @@ const observer = new IntersectionObserver(entries => {
     }
   });
 });
+const slides = document.querySelectorAll('.slide-in');
+window.addEventListener('scroll', () => {
+  slides.forEach(slide => {
+    const rect = slide.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 100) {
+      slide.classList.add('visible');
+    }
+  });
+});
+
 
 elements.forEach(el => observer.observe(el));
 
@@ -42,15 +52,5 @@ document.addEventListener("DOMContentLoaded", () => {
   setTimeout(() => {
     hero.style.opacity = 1;
   }, 500);
-});
-
-const slides = document.querySelectorAll('.slide-in');
-window.addEventListener('scroll', () => {
-  slides.forEach(slide => {
-    const rect = slide.getBoundingClientRect();
-    if (rect.top < window.innerHeight - 100) {
-      slide.classList.add('visible');
-    }
-  });
 });
 
