@@ -15,7 +15,7 @@ body {
 /* Hero Section */
 .hero {
     position: relative;
-    background: url('images/deladem.jpg') center/cover no-repeat;
+    background: url('Images/deladem.jpg') center/cover no-repeat;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -95,7 +95,16 @@ body {
 .btn:hover {
     background: #0199a8;
 }
+.slide-in {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 0.8s ease-out;
+}
 
+.slide-in.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
 /* Sections */
 .section {
     padding: 4rem 2rem;
@@ -243,16 +252,4 @@ body {
     opacity: 1;
     transform: translateY(0);
 }
-
-.slide-in {
-  opacity: 0;
-  transform: translateX(-50px);
-  transition: all 0.8s ease-out;
-}
-
-.slide-in.visible {
-  opacity: 1;
-  transform: translateX(0);
-}
-
 
