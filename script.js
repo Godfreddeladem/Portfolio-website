@@ -30,4 +30,9 @@ function scrollFunction() {
 scrollBtn.addEventListener("click", () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
+// Loading animation
+window.addEventListener("load", () => {
+  document.getElementById("loader").style.display = "none";
+});
+
 
