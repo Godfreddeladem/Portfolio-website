@@ -76,17 +76,17 @@ document.addEventListener("DOMContentLoaded", () => {
     1: {
       title: "Brand Poster Design",
       desc: "This vibrant promotional poster was created for a new clothing line launch — highlighting brand identity and color balance.",
-      img: "Images/project1.jpg",
+      img: "Images/ON black.png.jpg",
     },
     2: {
       title: "Logo Design",
       desc: "A minimalist luxury logo designed using geometric balance and strong typography to represent premium streetwear.",
-      img: "Images/project2.jpg",
+      img: "Images/NEW BRAND .png",
     },
     3: {
       title: "Product Mockup",
       desc: "This AirPods mockup showcases Delboy’s Store products with a clean presentation and brand consistency.",
-      img: "Images/project3.jpg",
+      img: "Images/On red.png.jpg",
     }
   };
 
