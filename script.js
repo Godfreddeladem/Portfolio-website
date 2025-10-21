@@ -53,4 +53,19 @@ document.addEventListener("DOMContentLoaded", () => {
     hero.style.opacity = 1;
   }, 500);
 });
+document.addEventListener("DOMContentLoaded", () => {
+  const slideElements = document.querySelectorAll('.slide-in');
+
+  const revealOnScroll = () => {
+    slideElements.forEach(el => {
+      const rect = el.getBoundingClientRect();
+      if (rect.top < window.innerHeight - 100) {
+        el.classList.add('visible');
+      }
+    });
+  };
+
+  window.addEventListener('scroll', revealOnScroll);
+  revealOnScroll(); // Run on page load too
+});
 
