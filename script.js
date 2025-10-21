@@ -46,3 +46,21 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 500);
   }
 });
+// PAGE FADE-IN EFFECT
+document.addEventListener("DOMContentLoaded", () => {
+  document.body.classList.add("fade-in");
+
+  const links = document.querySelectorAll("a[href]");
+  links.forEach(link => {
+    const url = new URL(link.href);
+    if (url.origin === location.origin) {
+      link.addEventListener("click", e => {
+        e.preventDefault();
+        document.body.classList.remove("fade-in");
+        setTimeout(() => {
+          window.location = link.href;
+        }, 400);
+      });
+    }
+  });
+});
